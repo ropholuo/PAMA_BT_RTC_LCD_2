@@ -15,7 +15,7 @@ void MenuScreen(void);
 void BluetoothScreen(void);
 void ScheduleScreen(void);
 void DispensedScreen(void);
-
+void ScheduleReceived(void);
 
 
 #endif /* INC_SCREENS_H_ */

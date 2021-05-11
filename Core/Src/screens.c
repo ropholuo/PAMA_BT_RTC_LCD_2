@@ -171,6 +171,14 @@ void BluetoothScreen(void)
 	type("PAMA" , 85, 294);
 }
 
+void ScheduleReceived(void)
+{
+	LCD_ClearScreenLtdc(0x05);
+	type("SCHEDULE", 40, 50);
+	type("RECEIVED", 40, 68);
+	type("PAMA" , 85, 294);
+}
+
 void ScheduleScreen()
 {
 	LCD_ClearScreenLtdc(0x05);

@@ -61,8 +61,8 @@ all: main-build
 main-build: PAMA_LCD_BLUETOOTH_1.elf secondary-outputs
 
 # Tool invocations
-PAMA_LCD_BLUETOOTH_1.elf: $(OBJS) $(USER_OBJS) C:\Users\matts\STM32CubeIDE\workspace_1.5.1\PAMA_LCD_BLUETOOTH_1\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "PAMA_LCD_BLUETOOTH_1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\matts\STM32CubeIDE\workspace_1.5.1\PAMA_LCD_BLUETOOTH_1\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PAMA_LCD_BLUETOOTH_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+PAMA_LCD_BLUETOOTH_1.elf: $(OBJS) $(USER_OBJS) C:\Users\21953\Desktop\SPR21\PAMA_BT_RTC_LCD_2\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "PAMA_LCD_BLUETOOTH_1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\21953\Desktop\SPR21\PAMA_BT_RTC_LCD_2\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PAMA_LCD_BLUETOOTH_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

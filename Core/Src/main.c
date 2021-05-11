@@ -124,7 +124,7 @@ int main(void)
   LCD_DispInit_Ltdc();
   
   //Button Interrupt Initialization
-  initializeGPIONVIC();
+  //initializeGPIONVIC();
 
   //Displays Welcome and then Menu
   InitialScreen();
@@ -150,6 +150,14 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  while(1)
+  {
+		if(strlen(buffer)>0)
+		{
+			ScheduleReceived();
+			break;
+		}
+  }
   while (1)
   {
     /* USER CODE END WHILE */

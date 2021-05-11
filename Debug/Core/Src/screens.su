@@ -3,5 +3,6 @@ screens.c:132:6:type	32	static
 screens.c:147:6:InitialScreen	8	static
 screens.c:156:6:MenuScreen	8	static
 screens.c:164:6:BluetoothScreen	8	static
-screens.c:174:6:ScheduleScreen	8	static
-screens.c:188:6:DispensedScreen	8	static
+screens.c:174:6:ScheduleReceived	8	static
+screens.c:182:6:ScheduleScreen	8	static
+screens.c:196:6:DispensedScreen	8	static

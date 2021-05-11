@@ -248,7 +248,7 @@ void TIM6_DAC_IRQHandler(void)
 	if(strlen(buffer)>0)
 		timer_count++;
 
-	if(timer_count>200){
+	/*if(timer_count>200){
 
 		//Arrange_strings(buffer);
 		Manage_strings();
