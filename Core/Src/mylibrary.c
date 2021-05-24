@@ -41,7 +41,7 @@ void Process_string(char arr[])
 	  }
 
 	  strncpy (med, arr+31, j-1);
-	  strncpy (npill, arr+46+j, 1);
+	  strncpy (npill, arr+47+j, 1);
 	  if(arr[62+j]==':')
 	  {
 		  strncpy (mtime, arr+58+j, 4);

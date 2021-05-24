@@ -5652,9 +5652,9 @@ int main(void)
  800280a:	681b      	ldr	r3, [r3, #0]
  800280c:	f042 0220 	orr.w	r2, r2, #32
  8002810:	60da      	str	r2, [r3, #12]
-
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while(1)
   {
 		if(strlen(buffer)>0)
